@@ -39,28 +39,28 @@
 document.addEventListener("DOMContentLoaded", function() {
   const quizData = [
     {
-      q: "Complete the sentence: 'My friend Leo ... football every Tuesday.'",
+      q: "Complete the sentence: My friend Leo ... football every Tuesday.",
       options: ["play", "plays", "playing", "playes"],
       correct: 1,
-      reason: "With 'Leo' (3rd person singular: he), add -s to the verb play -> plays.",
-      hint: "Think about the pronoun that replaces 'Leo' (he) in the present simple."
+      reason: "With Leo (3rd person singular: he), add -s to the verb play -> plays.",
+      hint: "Think about the pronoun that replaces Leo (he) in the present simple."
     },
     {
-      q: "Complete the sentence: 'She ... French and Spanish at school.'",
+      q: "Complete the sentence: She ... French and Spanish at school.",
       options: ["studies", "study", "studys", "studying"],
       correct: 0,
       reason: "Study ends with a consonant + -y: change -y to -ies -> studies.",
-      hint: "Look at the ending of 'study' (consonant + y) in the 3rd person singular."
+      hint: "Look at the ending of study (consonant + y) in the 3rd person singular."
     },
     {
-      q: "Complete the sentence: 'Tom always ... his teeth before going to bed.'",
+      q: "Complete the sentence: Tom always ... his teeth before going to bed.",
       options: ["brush", "brushs", "brushed", "brushes"],
       correct: 3,
       reason: "Verbs ending in -sh take -es in the 3rd person singular -> brushes.",
       hint: "After -sh, -ch, -s, -x or -z, add -es."
     },
     {
-      q: "How is the final -s pronounced in 'He stops the car'?",
+      q: "How is the final -s pronounced in: He stops the car?",
       options: ["/z/", "/iz/", "/s/", "/a/"],
       correct: 2,
       reason: "After a voiceless sound like /p/ at the end of stop, the final -s is pronounced /s/.",
@@ -74,53 +74,53 @@ document.addEventListener("DOMContentLoaded", function() {
       hint: "Look for a verb ending in a hissing or buzzing sound (-sh, -ch, -s, -z)."
     },
     {
-      q: "Complete the sentence: 'Bijay ... History and Geography every day.'",
+      q: "Complete the sentence: Bijay ... History and Geography every day.",
       options: ["study", "studys", "studies", "studying"],
       correct: 2,
       reason: "Bijay = he. Consonant + -y changes to -ies -> studies.",
       hint: "Check the spelling rule for verbs ending in consonant + -y."
     },
     {
-      q: "Complete the sentence: 'My sister ... to school by bus.'",
+      q: "Complete the sentence: My sister ... to school by bus.",
       options: ["go", "gos", "going", "goes"],
       correct: 3,
       reason: "Verbs ending in -o (like go) take -es in the 3rd person singular -> goes.",
       hint: "Verbs ending in -o add -es with he, she, it."
     },
     {
-      q: "How is the final -s pronounced in 'He reads a book'?",
+      q: "How is the final -s pronounced in: He reads a book?",
       options: ["/s/", "/z/", "/iz/", "/a/"],
       correct: 1,
       reason: "After a voiced sound like /d/, the final -s is pronounced /z/.",
       hint: "Touch your throat when saying /d/: your vocal cords vibrate (voiced sound)."
     },
     {
-      q: "Complete the sentence: 'Sarah ... a letter to her cousin.'",
+      q: "Complete the sentence: Sarah ... a letter to her cousin.",
       options: ["writes", "write", "writs", "writing"],
       correct: 0,
-      reason: "With 'Sarah' (she), add -s to write -> writes.",
+      reason: "With Sarah (she), add -s to write -> writes.",
       hint: "Write already ends in -e, so just add -s."
     },
     {
-      q: "How is the final -s pronounced in 'He writes a story'?",
+      q: "How is the final -s pronounced in: He writes a story?",
       options: ["/z/", "/iz/", "/s/", "/a/"],
       correct: 2,
       reason: "The last consonant sound of write is /t/ (voiceless), so the final -s is pronounced /s/.",
       hint: "Listen to the sound before the -s: /t/ is a voiceless sound."
     },
     {
-      q: "Complete the sentence: 'School ... at 8:30 in the morning.'",
+      q: "Complete the sentence: School ... at 8:30 in the morning.",
       options: ["start", "startes", "starting", "starts"],
       correct: 3,
-      reason: "'School' = it (3rd person singular), so add -s -> starts.",
-      hint: "School can be replaced by the pronoun 'it'."
+      reason: "School = it (3rd person singular), so add -s -> starts.",
+      hint: "School can be replaced by the pronoun it."
     },
     {
-      q: "Complete the sentence: 'The movie ... at 10 o'clock.'",
+      q: "Complete the sentence: The movie ... at 10 o clock.",
       options: ["finish", "finishes", "finishs", "finishing"],
       correct: 1,
       reason: "Verbs ending in -sh take -es in the 3rd person singular -> finishes.",
-      hint: "Look at the last two letters of 'finish'."
+      hint: "Look at the last two letters of finish."
     },
     {
       q: "Which present simple verb has an ending pronounced /iz/?",
@@ -130,88 +130,88 @@ document.addEventListener("DOMContentLoaded", function() {
       hint: "Find the verb that gains an extra syllable when you add -es."
     },
     {
-      q: "Complete the sentence: 'He ... a lot of time with his friends.'",
+      q: "Complete the sentence: He ... a lot of time with his friends.",
       options: ["spend", "spendes", "spends", "spending"],
       correct: 2,
-      reason: "With 'he', add -s to the verb spend -> spends.",
+      reason: "With he, add -s to the verb spend -> spends.",
       hint: "Standard 3rd person singular rule: base verb + -s."
     },
     {
-      q: "Complete the sentence: 'My brother ... a sandwich for lunch.'",
+      q: "Complete the sentence: My brother ... a sandwich for lunch.",
       options: ["eat", "eates", "eating", "eats"],
       correct: 3,
       reason: "My brother = he, so add -s to eat -> eats.",
-      hint: "My brother corresponds to the pronoun 'he'."
+      hint: "My brother corresponds to the pronoun he."
     },
     {
-      q: "How is the final -s pronounced in 'She eats an apple'?",
+      q: "How is the final -s pronounced in: She eats an apple?",
       options: ["/z/", "/s/", "/iz/", "/a/"],
       correct: 1,
       reason: "After the voiceless /t/ sound at the end of eat, the -s is pronounced /s/.",
-      hint: "The /t/ sound is voiceless, just like in 'starts' and 'writes'."
+      hint: "The /t/ sound is voiceless, just like in starts and writes."
     },
     {
-      q: "Complete the sentence: 'She ... orange juice every morning.'",
+      q: "Complete the sentence: She ... orange juice every morning.",
       options: ["drinks", "drink", "drinkes", "drinking"],
       correct: 0,
-      reason: "With 'she', add -s to drink -> drinks.",
+      reason: "With she, add -s to drink -> drinks.",
       hint: "Add -s to the base verb for the 3rd person singular."
     },
     {
-      q: "How is the final -s pronounced in 'He drinks water'?",
+      q: "How is the final -s pronounced in: He drinks water?",
       options: ["/z/", "/iz/", "/s/", "/a/"],
       correct: 2,
       reason: "After the voiceless /k/ sound at the end of drink, the -s is pronounced /s/.",
       hint: "The /k/ sound does not make your vocal cords vibrate."
     },
     {
-      q: "Complete the sentence: 'Emma ... very well in the choir.'",
+      q: "Complete the sentence: Emma ... very well in the choir.",
       options: ["sing", "singes", "singing", "sings"],
       correct: 3,
       reason: "Emma = she, so add -s to sing -> sings.",
-      hint: "Emma can be replaced by 'she'."
+      hint: "Emma can be replaced by she."
     },
     {
-      q: "How is the final -s pronounced in 'He plays with friends'?",
+      q: "How is the final -s pronounced in: He plays with friends?",
       options: ["/s/", "/z/", "/iz/", "/a/"],
       correct: 1,
       reason: "After a vowel sound (like in play), the final -s is pronounced /z/.",
       hint: "Vowel sounds are always voiced, so the -s sounds like a bee buzzing."
     },
     {
-      q: "Complete the sentence: 'He ... his computer to do his homework.'",
+      q: "Complete the sentence: He ... his computer to do his homework.",
       options: ["uses", "use", "usies", "using"],
       correct: 0,
       reason: "Use ends in -e, so just add -s -> uses.",
-      hint: "Add -s to 'use' for the 3rd person singular."
+      hint: "Add -s to use for the 3rd person singular."
     },
     {
-      q: "How is the final -s pronounced in 'She uses a tablet'?",
+      q: "How is the final -s pronounced in: She uses a tablet?",
       options: ["/s/", "/z/", "/iz/", "/a/"],
       correct: 2,
       reason: "Use ends with a /z/ sound, so adding -s creates an extra syllable pronounced /iz/.",
-      hint: "Say 'use' + 's' out loud: you hear two syllables (u-ses)."
+      hint: "Say use + s out loud: you hear two syllables (u-ses)."
     },
     {
-      q: "Complete the sentence: 'Claire ... hip-hop every Wednesday.'",
+      q: "Complete the sentence: Claire ... hip-hop every Wednesday.",
       options: ["dance", "dances", "dancies", "dancing"],
       correct: 1,
       reason: "Claire = she. Dance ends in -e, so add -s -> dances.",
-      hint: "Claire corresponds to the pronoun 'she'."
+      hint: "Claire corresponds to the pronoun she."
     },
     {
-      q: "How is the final -s pronounced in 'She dances well'?",
+      q: "How is the final -s pronounced in: She dances well?",
       options: ["/s/", "/z/", "/iz/", "/a/"],
       correct: 2,
       reason: "Dance ends with an /s/ sound, so adding -s makes an extra syllable pronounced /iz/.",
       hint: "Words ending in a hissing sound (/s/, /z/, /sh/, /ch/) take /iz/."
     },
     {
-      q: "Complete the sentence: 'The lesson ... at 9:00 AM.'",
+      q: "Complete the sentence: The lesson ... at 9:00 AM.",
       options: ["begin", "begines", "beginning", "begins"],
       correct: 3,
       reason: "The lesson = it, so add -s to begin -> begins.",
-      hint: "'The lesson' is 3rd person singular (it)."
+      hint: "The lesson is 3rd person singular (it)."
     }
   ];
 
@@ -220,3 +220,5 @@ document.addEventListener("DOMContentLoaded", function() {
   let answered = false;
 
   function renderQuestion() {
+    answered = false;
+    const item = quizData[current];
